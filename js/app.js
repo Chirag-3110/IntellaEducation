@@ -44,3 +44,4 @@ async function fetchCertificate(){
         console.log("Error getting document:", error);
     });
 }
+
