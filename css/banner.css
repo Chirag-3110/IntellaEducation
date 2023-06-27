@@ -1,0 +1,45 @@
+.banner_slide {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #cccccc;
+    color: #fff;
+    padding: 20px;
+    z-index: 9999;
+    animation: slideDown 1s ease-in-out;
+    height: 100vh;
+}
+  
+.banner_slide.hide {
+    animation-name: slideUp;
+}
+  
+.close {
+    color: #fff;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+  
+@keyframes slideDown {
+    from {
+      top: -100vh;
+    }
+    to {
+      top: 0;
+    }
+}
+  
+@keyframes slideUp {
+    from {
+      top: 0;
+    }
+    to {
+      top: -100vh;
+    }
+}
